@@ -1,25 +1,38 @@
 const sum = require("./sum");
+//import { sum } from './sum';
 
-test('sum() = undefined', () => {
-  expect(sum()).toBe(undefined);
-});
+describe ('sum', () => {
+  test('check 1 argument', () => {
+    expect(sum(1)()).toBe(1);
+  });
 
-test('sum(1,undefined) = undefined', () => {
+
+  test('check 5 arguments', () => {
+    expect(sum(0)(3)(2)(-6)()).toBe(-1);
+  });
+
+  test('check 5 arguments with (1,2,3)(1)()', () => {
+    expect(sum(1,2,3)(1)()).toBe(7);
+  });
+
+  test('check 1 zero argument', () => {
+    expect(sum(0)()).toBe(0);
+  });
+
+  test('check no arguments', () => {
     expect(sum()).toBe(undefined);
   });
 
-test('sum(1,2,3,4) = 10', () => {
-  expect(sum(1,2,3,4)).toBe(10);
-});
-
-test('sum(1,-5,3,7) = 6', () => {
-  expect(sum(1,-5,3,7)).toBe(6);
-});
-
-test('sum(1,1,1,1,1,1,1,1,1,1,1) = 11', () => {
-  expect(sum(1,1,1,1,1,1,1,1,1,1,1)).toBe(11);
-});
-
-test('typeof sum(1,2,3) = "number"', () => {
-  expect(typeof sum(1,2,3)).toBe("number");
+  test('check wrong arguments after ()', () => {
+    let check = false;
+    try {
+      sum(1)(2)()(3);
+    } catch (e ) {
+      if (e instanceof TypeError) {
+        check = true;
+        expect(e.message).toContain("sum(...)(...)(...) is not a function")
+      }
+    }
+    expect(check).toBeTruthy();
+  });
 });

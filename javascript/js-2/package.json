@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "second home work",
   "main": "sum.js",
+  "type": "module",
   "dependencies": {
     "aws4": "^1.10.0",
     "babel-preset-current-node-syntax": "^0.1.3",

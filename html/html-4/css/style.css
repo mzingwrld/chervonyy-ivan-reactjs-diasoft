@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+h2 {
+    color: #000;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.container-styling {
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3A1C71;
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+}
+
+.login-wrapper {
+    background-color: #f9f9f9;
+    padding: 54px 68px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-item {
+    padding: 0;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    margin: 0 0 24px;
+    vertical-align: top;
+}
+
+.form-item input {
+    height: 38px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-alert-border {
+    border-color: #d10000!important;
+}
+
+.form-item input:focus {
+    outline: 0;
+    border-color: rgb(162, 57, 202);
+}
+
+.button {
+    cursor: pointer;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    padding: 4px 15px;
+    border: 1px solid #d9d9d9;
+    outline: 0;
+    box-shadow: 0 2px 0 rgba(0,0,0,.045);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 23, 246);
+    font-size: 24px;
+    height: 50px;
+    border-color: rgb(71, 23, 246);
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #D76D77;
+    border-color: #D76D77;
+}
+
+.button:focus {
+    border-color: rgb(162, 57, 202);
+    outline: 0;
+}
+
+.button:active {
+    border-color: #D76D77;
+}
+
+
+.alert-message {
+    opacity: 0;
+    color: #d10000;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.alert-message-show {
+    opacity: 1;
+    color: #d10000;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

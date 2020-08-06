@@ -1,0 +1,26 @@
+{
+  "name": "js-2",
+  "version": "1.0.0",
+  "description": "second home work",
+  "main": "sum.js",
+  "type": "module",
+  "dependencies": {
+    "aws4": "^1.10.0",
+    "babel-preset-current-node-syntax": "^0.1.3",
+    "balanced-match": "^1.0.0",
+    "browser-process-hrtime": "^1.0.0",
+    "buffer-from": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ivan Chervonyy",
+  "license": "ISC"
+}

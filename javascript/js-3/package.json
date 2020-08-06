@@ -1,0 +1,15 @@
+{
+  "name": "js-3",
+  "version": "1.0.0",
+  "description": "Third javascript home work",
+  "main": "getpath.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ivan Chervonyy",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jest": "^26.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "module-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start-server": "node server.js",
+    "test": "jest --env=node",
+    "ci": "start-server-and-test start-server http://localhost:3001 test"
+  },
+  "author": "Ivan Chervonyy",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "jest": "^26.4.2"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^1.11.3"
+  }
+}

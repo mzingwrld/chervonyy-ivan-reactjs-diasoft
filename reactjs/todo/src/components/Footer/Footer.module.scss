@@ -1,0 +1,27 @@
+.footer {
+    //background-image: linear-gradient(to top, rgba(26,40,120,0.70), rgba(10,143,196,0.70));
+    background: #ebecf0;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+    .box {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: #172b4d;
+    }
+    .author {
+        margin: 5px 0 5px 0;
+        color: #172b4d;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 0px 5px 0px;
+    }
+}

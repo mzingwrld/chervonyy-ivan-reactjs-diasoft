@@ -1,0 +1,14 @@
+{
+  "name": "js-4",
+  "version": "1.0.0",
+  "description": "Fourth javascript home work",
+  "main": "promiseReduce.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ivan Chervonyy",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}

@@ -3,11 +3,12 @@ const axios = require('axios');
 const axiosGetRequest = () => axios.get('http://localhost:3001');
 
 const request = (n, type) => {
-    switch (type) {
+    return type === 'SYNC' ? handleSyncRequests(n) : handleAsyncRequests(n);
+    /*switch (type) {
         case 'ASYNC': return handleAsyncRequests(n);
         case 'SYNC':  return handleSyncRequests(n);
         default: return handleAsyncRequests(n);
-    }
+    }*/
 }
 
 const handleAsyncRequests = async (n) => {
@@ -19,7 +20,7 @@ const handleAsyncRequests = async (n) => {
     return repsonses;
 }
 
-const handleSyncRequests = (n) => {
+const handleSyncRequests = async (n) => {
     let requests = new Array(n);
     requests.fill(axiosGetRequest());
     

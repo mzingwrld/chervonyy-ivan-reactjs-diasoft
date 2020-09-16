@@ -12,7 +12,7 @@ describe('request_test', function () {
     });
 }, timeout); 
 
-describe('request_test', function () {
+describe('request_test_2', function () {
 	it('request_2', () => { // sequential requests
         return request(3,'ASYNC')
             .then((res) => {
